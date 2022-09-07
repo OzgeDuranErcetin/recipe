@@ -1,0 +1,9 @@
+version: '3'
+services:
+  recipe-app:
+    image: recipe
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
